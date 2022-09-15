@@ -1,4 +1,4 @@
-gb="git branch"
+alias gb="git branch"
 alias gca="git commit --amend"
 alias gd="git diff"
 alias gdc="git diff --cached"
