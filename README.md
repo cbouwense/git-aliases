@@ -14,7 +14,8 @@ alias gdhh="git diff HEAD~1 HEAD"
 
 alias gdhhn="git diff HEAD~1 HEAD --name-status"
 
-alias gl="git log --all --graph --decorate"
+alias gl="git log --all --graph --decorate --oneline"
+
+alias gll="git log --all --graph --decorate"
 
 alias gs="git status"
-
