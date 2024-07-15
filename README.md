@@ -1,21 +1,24 @@
-alias gb="git branch"
-
-alias gca="git commit --amend"
-
-alias gd="git diff"
-
-alias gdc="git diff --cached"
-
-alias gddh="git diff develop HEAD"
-
-alias gddhn="git diff develop HEAD --name-status"
-
-alias gdhh="git diff HEAD~1 HEAD"
-
-alias gdhhn="git diff HEAD~1 HEAD --name-status"
-
-alias gl="git log --all --graph --decorate --oneline"
-
-alias gll="git log --all --graph --decorate"
-
-alias gs="git status"
+alias clean-keep-dev='git branch | grep -v develop | xargs git branch -D'
+alias cr='git branch -r | grep -v origin/HEAD | grep -v another_remote-tracker_branch_I_still_want | xargs git branch -D -r'
+alias g-='git checkout -'
+alias gb='git branch'
+alias gbD='git branch -D'
+alias gbd='git branch -d'
+alias gc='git checkout'
+alias gca='git commit --amend'
+alias gcb='git checkout -b'
+alias gcd='git checkout develop'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gddh='git diff develop HEAD'
+alias gddhn='git diff develop HEAD --name-status'
+alias gdhh='git diff HEAD~1 HEAD'
+alias gdhhn='git diff HEAD~1 HEAD --name-status'
+alias gfd='git fetch origin develop && git branch -f develop origin/develop'
+alias gl='git log --all --graph --decorate --oneline'
+alias gll='git log --all --graph --decorate'
+alias grc='git rebase --continue'
+alias grd='git rebase develop'
+alias grid='git rebase -i develop'
+alias gs='git status'
+alias prune-origin='git remote prune origin'
